@@ -22,7 +22,7 @@ CFLAGS += -W -Wall -Wshadow -Wstrict-prototypes -Wpointer-arith -Wcast-qual \
           -Wcast-align -Wwrite-strings -Wmissing-prototypes -Winline -Wundef
 
 # Let lseek and mmap support 64-bit wide offsets
-CFLAGS += -D_FILE_OFFSET_BITS=64
+CFLAGS += -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE
 
 #CFLAGS += -DBIGENDIAN
 #CFLAGS += -DALIGNMENT_WORKAROUND
