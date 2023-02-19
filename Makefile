@@ -80,6 +80,7 @@ vpddecode : vpddecode.o vpdopt.o util.o
 
 dmidecode.o : dmidecode.c version.h types.h util.h config.h dmidecode.h \
 	      dmiopt.h dmioem.h dmioutput.h
+	$(info    CFLAGS is [$(CFLAGS)])
 	$(CC) $(CFLAGS) -c $< -o $@
 
 dmiopt.o : dmiopt.c config.h types.h util.h dmidecode.h dmiopt.h
